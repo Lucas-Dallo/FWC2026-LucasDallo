@@ -2,7 +2,6 @@ body {
     font-family: Arial;
     text-align: center;
     background-color: rgb(237, 236, 235);
-    pading: 10px;
     background-image:
     url(imagens/taça2026.png), 
     url(imagens/neymar.png);
@@ -19,7 +18,7 @@ body {
 
     background-attachment: fixed, fixed;
 
-    padding: 10px;
+    
 }
 
 
@@ -144,5 +143,6 @@ img{
 @media (max-width: 768px) {
     body {
         background-image: none;
+        pading: 10px;
     }
 }
