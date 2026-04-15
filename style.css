@@ -1,0 +1,141 @@
+body {
+    font-family: Arial;
+    text-align: center;
+    background-color: rgb(237, 236, 235);
+
+    background-image:
+    url(imagens/taça2026.png), 
+    url(imagens/neymar.png);
+
+    background-repeat: no-repeat, no-repeat;
+
+    background-position: 
+        left center,
+        right center;
+
+    background-size: 
+        20%,
+        20%;
+
+    background-attachment: fixed, fixed;
+
+    /* ALTERADO */
+    padding: 10px;
+}
+
+/* TITULOS */
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+}
+
+/* TABELA RESPONSIVA */
+table {
+    border-collapse: collapse;
+    margin: auto;
+    width: 100%; /* ALTERADO */
+    max-width: 600px; /* limita no desktop */
+    table-layout: fixed;
+    margin-bottom: 20px;
+}
+
+td {
+    border: 1px solid rgb(112, 133, 18);
+    padding: 10px;
+    vertical-align: middle;
+}
+
+/* COLUNAS */
+td:nth-child(1) {
+    width: 70%;
+}
+
+td:nth-child(2) {
+    width: 30%;
+    text-align: center;
+}
+
+/* TEXTO DENTRO DA TABELA */
+table p {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 6px 0;
+    font-size: 0.95rem;
+}
+
+/* IMAGENS */
+table img {
+    width: 25px;
+    height: auto;
+}
+
+.imgtop {
+    max-width: 100%;
+    height: auto;
+}
+
+/* BOTÃO DETAILS */
+summary {
+    list-style: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+summary::before {
+    content: "";
+    width: 80px;
+    height: 80px;
+    background-image: url("imagens/bola.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: transform 0.3s;
+}
+
+details[open] summary::before {
+    transform: rotate(90deg);
+}
+
+/* 🔥 RESPONSIVIDADE PARA CELULAR */
+@media (max-width: 768px) {
+
+    body {
+        padding: 5px;
+        background-size: 40%, 40%; /* imagens menores */
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    td {
+        padding: 8px;
+    }
+
+    table p {
+        font-size: 0.85rem;
+    }
+
+    table img {
+        width: 20px;
+    }
+
+    summary::before {
+        width: 60px;
+        height: 60px;
+    }
+}
