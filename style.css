@@ -2,7 +2,7 @@ body {
     font-family: Arial;
     text-align: center;
     background-color: rgb(237, 236, 235);
-
+    pading: 10px;
     background-image:
     url(imagens/taça2026.png), 
     url(imagens/neymar.png);
