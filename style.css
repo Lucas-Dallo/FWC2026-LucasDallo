@@ -140,3 +140,9 @@ details[open] summary::before {
 img{
     width: 50%;
 }
+
+@media (max-width: 768px) {
+    body {
+        background-image: none;
+    }
+}
